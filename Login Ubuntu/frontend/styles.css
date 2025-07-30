@@ -1,0 +1,112 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Libre Baskerville', serif;
+  background-color: #f4eee0;
+  color: #3e2f1c;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Contenedor */
+.login-wrapper {
+  width: 100%;
+  max-width: 420px;
+  padding: 1rem;
+}
+
+/* Tarjeta */
+.card {
+  background: #e7d9c5;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(62, 47, 28, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  border: 1px solid #d8c7aa;
+}
+
+/* Título */
+.title {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Grupo de entrada */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 0.9rem;
+}
+
+.input-group input {
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #c2b093;
+  border-radius: 6px;
+  background-color: #fdfaf5;
+  color: #3e2f1c;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #9c6644;
+}
+
+/* Contraseña con ícono */
+.password-field {
+  position: relative;
+}
+
+.password-field .toggle {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #7a5e42;
+}
+
+/* Checkbox */
+.remember {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+}
+
+/* Botón */
+.btn {
+  padding: 0.7rem;
+  background-color: #9c6644;
+  color: #fffef8;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #7c5135;
+}
+
+/* Error */
+.error {
+  color: #a94442;
+  font-size: 0.85rem;
+  text-align: center;
+  min-height: 1.2rem;
+}

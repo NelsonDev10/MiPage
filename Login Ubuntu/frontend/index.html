@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login Vintage</title>
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Fuente vintage -->
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="login-wrapper">
+    <form id="loginForm" class="card">
+      <h2 class="title">Iniciar Sesion</h2>
+
+      <label class="input-group">
+        <span>Usuario</span>
+        <input type="text" name="username" required />
+      </label>
+
+      <label class="input-group">
+        <span>Contraseña</span>
+        <div class="password-field">
+          <input type="password" name="password" id="password" required />
+          <button type="button" class="toggle" id="togglePassword">👁️</button>
+        </div>
+      </label>
+
+      <label class="remember">
+        <input type="checkbox" name="remember" />
+        <span>Recordarme</span>
+      </label>
+
+      <button class="btn" type="submit">Ingresar</button>
+
+      <p class="error" id="errorMsg"></p>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
